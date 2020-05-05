@@ -25,7 +25,12 @@ function destructivelyAddElementToEndOfArray(array, element) {
 }
 
 function accessElementInArray(array, index) {
-  if (Number.isInteger(index)){
+  if (Number.isInteger(index)) {
     return array[index];
   }
+}
+
+function destructivelyRemoveElementFromBeginningOfArray (array) {
+  array.shift();
+  return array;
 }
