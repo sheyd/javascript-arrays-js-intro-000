@@ -23,3 +23,9 @@ function destructivelyAddElementToEndOfArray(array, element) {
   array.push(element);
   return array;
 }
+
+function accessElementInArray(array, index) {
+  if (Number.isInteger(index)){
+    return array[index];
+  }
+}
